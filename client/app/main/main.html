@@ -1,0 +1,31 @@
+<navbar></navbar>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-7">
+			<img src="assets/images/meat.jpg" />
+			<canvas id="pizza" width="675" height="700">
+				Your browser does not support the HTML5 canvas tag.
+			</canvas>
+		</div>
+		<div class="col-lg-5">
+			<br><br>
+			<br><br><br><hr>
+			<h1>We are {{points}} story points away from delicious Pizza!</h1>
+			<hr><br><br><br>
+		</div>
+	</div>
+</div>
+
+<header class="hero-unit" id="banner">
+	<div class="container" style="height: 150px;">
+		<uib-carousel interval="careouselInterval" no-wrap="noWrapSlides" no-pause="noPause">
+			<uib-slide ng-repeat="slide in slides" index="slide.id">
+				<img ng-src="{{slide.image}}" style="margin:auto; height: 150px; width: auto; position: relative;">
+				<div class="carousel-caption">
+					<p>{{slide.text}}</p>
+				</div>
+			</uib-slide>
+		</uib-carousel>
+	</div>
+</header>
